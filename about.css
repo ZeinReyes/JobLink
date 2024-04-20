@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #ffffff;
+    background-color: #fcfafa;
 }
   
 li {
@@ -214,8 +214,7 @@ a {
     height: 70px;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
-    background-color: #000000;
-background-image: linear-gradient(43deg, #000000 0%, #6f6b6b 46%, #0f0a00 100%);
+    background-color: #101010;;
 
     display: flex;
   }
@@ -244,36 +243,11 @@ background-image: linear-gradient(43deg, #000000 0%, #6f6b6b 46%, #0f0a00 100%);
     margin: 25px auto;
   }
   
-  .svg {
-    width: 25px;
-    height: 25px;
-    transform: translateY(25%);
-    fill: #101010;
-  }
-  
-  .card__links {
-    margin-top: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-self: flex-end;
-  }
-  
-  .card__links .link {
-    color: #101010;
-    font-weight: 600;
-    font-size: 15px;
-    text-decoration: none;
-  }
-  
-  .card__links .link:hover {
-    text-decoration: underline;
-  }
-  
 
 .team h1 {
     margin: 150px auto 50px;
     text-align: center;
-    position: relative; /* Ensure the pseudo-elements are positioned relative to this element */
+    position: relative;
 }
 
 .team h1::before,
@@ -281,9 +255,9 @@ background-image: linear-gradient(43deg, #000000 0%, #6f6b6b 46%, #0f0a00 100%);
     content: '';
     position: absolute;
     top: 50%;
-    width: calc(50% - 200px); /* Adjust the width of the lines */
-    height: 2px; /* Adjust the height of the lines */
-    background-color: #101010; /* Adjust the color of the lines */
+    width: calc(50% - 200px);
+    height: 2px;
+    background-color: #101010;
 }
 
 .team h1::before {

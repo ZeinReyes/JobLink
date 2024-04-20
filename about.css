@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+}
+  
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 5rem;
+    position: relative;
+    transition: transform 0.3s ease; /* Add transition for smooth animation */
+}
+
+.nav-item:hover {
+    transform: translateY(-5px); /* Move the item slightly up when hovered */
+}
+
+.nav-link {
+    font-size: 20px;
+    font-weight: 400;
+    color: #00796B;
+    transition: color 0.3s ease; /* Add transition for color change */
+}
+
+.nav-link:hover {
+    color: black; /* Change color on hover */
+}
+
+.nav-logo {
+    font-size: 2.1rem;
+    font-weight: 500;
+    color: #007bff;
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #ffffff;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+.heading {
+    text-align: center;
+    margin: 50px 0 20px;
+    font-size: 50px;
+}
+
+.subheading {
+    text-align: center;
+    margin: 30px auto;
+    font-size: 25px;
+    width: 70%;
+}
+
+.purpose {
+    background-color: #ffffff;
+    width: 80%;
+    height: 80vh;
+    margin: 50px auto;
+    border-radius: 20px;
+    box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.075);
+    display: flex;
+}
+
+.purpose-image {
+    width: 50%;
+    border-radius: 20px;
+}
+
+.purpose-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #101010;
+}
+
+.purpose-description h1 {
+    font-size: 50px;
+    margin: 20px auto;
+}
+
+.purpose-description p {
+    font-size: 15px;
+    margin: 20px auto;
+    width: 80%;
+}
+
+.mission-vision-header {
+    margin: 150px auto 50px;
+    text-align: center;
+    position: relative; /* Ensure the pseudo-elements are positioned relative to this element */
+}
+
+.mission-vision-header::before,
+.mission-vision-header::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: calc(50% - 230px); /* Adjust the width of the lines */
+    height: 2px; /* Adjust the height of the lines */
+    background-color: #101010; /* Adjust the color of the lines */
+}
+
+.mission-vision-header::before {
+    left: 50px;
+}
+
+.mission-vision-header::after {
+    right: 50px;
+}
+
+
+.mission-vision {
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    color: #101010;
+    background-color: #ffffff;
+    width: 450px;
+    height: 350px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px #5a5a5a,
+                2px 2px 5px #ffffff;
+    display: flex;
+    flex-direction: column;
+    transition: .4s;
+    position: relative;
+  }
+  
+  .card:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 0px 10px 2px #5a5a5a;
+  }
+  
+  .card__img {
+    width: 100%;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+    background-color: #000000;
+background-image: linear-gradient(43deg, #000000 0%, #6f6b6b 46%, #0f0a00 100%);
+
+    display: flex;
+  }
+  .card__img p{
+    color: white;
+    font-size: 20px;
+    margin: auto
+  }
+  
+  .card__descr-wrapper {
+    padding: 15px;
+    display: grid;
+  }
+  
+  .card__title {
+    color: #101010;
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: 900;
+    font-size: 16px;
+  }
+  
+  .card__descr {
+    color: #101010;
+    text-align: center;
+    margin: 25px auto;
+  }
+  
+  .svg {
+    width: 25px;
+    height: 25px;
+    transform: translateY(25%);
+    fill: #101010;
+  }
+  
+  .card__links {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-end;
+  }
+  
+  .card__links .link {
+    color: #101010;
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+  }
+  
+  .card__links .link:hover {
+    text-decoration: underline;
+  }
+  
+
+.team h1 {
+    margin: 150px auto 50px;
+    text-align: center;
+    position: relative; /* Ensure the pseudo-elements are positioned relative to this element */
+}
+
+.team h1::before,
+.team h1::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: calc(50% - 200px); /* Adjust the width of the lines */
+    height: 2px; /* Adjust the height of the lines */
+    background-color: #101010; /* Adjust the color of the lines */
+}
+
+.team h1::before {
+    left: 50px;
+}
+
+.team h1::after {
+    right: 50px;
+}
+
+/* carousel */
+
+.indicator {
+    width: 50px;
+    height: 100px;
+}
+

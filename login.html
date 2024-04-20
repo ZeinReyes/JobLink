@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <title>signin-signup</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="signin-signup">
+
+            <form action="" class="sign-in-from">
+                <h2 class="title">Log In </h2>
+
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Username">
+                </div>
+
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="password">
+                </div>
+
+                <input type="submit" value="Login" class="btn">
+                <p class="account-text">Don't have an acount? <a href="#" id="sign-up-btn2">Sign up</a></p>
+            </form>
+
+            <form action="" class="sign-up-form">
+                <h2 class="title">Sign up </h2>
+
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Username">
+                </div>
+
+                <div class="input-field">
+                    <i class="fas fa-envelope"></i>
+                    <input type="text" placeholder="Email">
+                </div>
+
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="password">
+                </div>
+
+                <input type="submit" value="Sign up" class="btn">
+                <p class="account-text">Already have have an acount? <a href="#" id="log-in-btn2">Log in</a></p>
+            </form>
+
+        </div>
+        <div class="panels-container">
+            <div id="panel"class="panel left-panel">
+                <div class="content">
+                    <h3>Signed up? <br> Log in</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque nihil cupiditate porro! Sint aliquid,</p>
+                <button class="btn" id="log-in-btn">Log In</button>
+                </div>
+                <img src="login_img.svg" alt="" class="image">
+            </div>
+            <div id="panel" class="panel right-panel">
+                <div class="content">
+                    <h3>New to Joblink? <br> Sign up</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque nihil cupiditate porro! Sint aliquid, </p>
+                <button class="btn" id="sign-up-btn">Sign up</button>
+                </div>
+                <img src="signup_img.svg" alt="" class="image">
+            </div>
+        </div>
+        
+
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

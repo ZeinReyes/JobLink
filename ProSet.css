@@ -1,0 +1,420 @@
+/* ===== =====  Poppins Google Font  ===== =====  */
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
+
+/* ===== =====>>  Universal Selector  <<===== =====  */
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  font-family: sans-serif;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ===== =====>>  Body Font Size  <<===== =====  */
+html {
+  font-size: 10px;
+}
+
+/* ===== =====>> Css Variables  <<===== =====  */
+:root {
+  /* =====>>  Font Color  <<===== */
+  --f1-color: #fff;
+  --f2-color: #000;
+  --f3-color: rgba(0, 0, 0, 0.8);
+  --f4-color: rgba(0, 0, 0, 0.6);
+  --f5-color: #0099cc;
+  --f6-color: #88cee6;
+
+  /* =====>>  Background Color  <<===== */
+  --bg1-color: #fff;
+  --bg2-color: #000;
+  --bg3-color: #33ccff;
+  --bg4-color: #33cc33;
+  --bg5-color: #0099cc;
+  --bg6-color: #ffffff; /* Remove transparency */
+  --bg7-color: #ffffff; /* Remove transparency */
+  --glass-bg: none; /* Remove transparency */
+  --C-lg-bg: linear-gradient(45deg, #ff3399, #ff9933);
+
+  /* ===== =====>>  Font Size  <<===== =====  */
+  --xxxl-fs: 2.2rem;
+  --xxl-fs: 1.8rem;
+  --xl-fs: 1.6rem;
+  --l-fs: 1.4rem;
+  --m-fs: 1.2rem;
+  --s-fs: 1.1rem;
+  --xs-fs: 1rem;
+
+  /* =====>>  Margin  <<===== */
+  --m-2-5: 2.5rem;
+  --m-1-8: 1.8rem;
+  --m-1-5: 1.5rem;
+  --m-0-6: 0.6rem;
+  --m-0-5: 0.5rem;
+  --m-0-3: 0.3rem;
+
+  /* =====>>  Padding  <<===== */
+  --p-2-5: 2.5rem;
+  --p-1-5: 1.5rem;
+  --p-1-0: 1rem;
+  --p-0-8: 0.8rem;
+  --p-0-5: 0.5rem;
+  --p-0-4: 0.4rem;
+  --p-0-3: 0.3rem;
+}
+
+/* ===== =====>>  Body Css  <<===== =====  */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #979797;
+}
+
+/* ===== =====>>  Body Main-Background Css  <<===== =====  */
+.main_bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(bg.png);
+  background-position: left;
+  z-index: -1;
+  filter: blur(10px);
+}
+
+/* ===== =====>>  Main-Container Css  <<===== =====  */
+.container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas:
+    "header header"
+    "userProfile userDetails"
+    "work_skills timeline_about"
+    "work_skills timeline_about";
+  width: 85%;
+  max-height: 90vh; /* Set maximum height */
+  overflow-y: auto; /* Add vertical scroll */
+  background: var(--bg1-color);
+  padding: var(--p-1-5);
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 25px rgba(0, 0, 0, 0.08);
+  border: 1px solid #f7f7f7;
+  border-radius: 20px;
+}
+
+.container::-webkit-scrollbar {
+  width: 0; /* Set the width of the scrollbar to 0 */
+}
+
+.container::-webkit-scrollbar-track {
+  background: transparent; /* Set the background of the scrollbar track to transparent */
+}
+
+.container::-webkit-scrollbar-thumb {
+  background: transparent; /* Set the background of the scrollbar thumb to transparent */
+}
+
+/* ===== =====>>  Container Cards Grid-Area Css Start  <<===== =====  */
+header {
+  grid-area: header;
+}
+
+.userProfile {
+  grid-area: userProfile;
+}
+
+.work_skills {
+  grid-area: work_skills;
+}
+
+.userDetails {
+  grid-area: userDetails;
+}
+
+.timeline_about {
+  grid-area: timeline_about;
+}
+
+/* ===== =====>>  Container Cards Css  <<===== =====  */
+.container .card {
+  background: var(--bg1-color); /* Use solid background */
+  border-radius: 0.5rem;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.05);
+  padding: var(--p-1-5);
+  background-clip: padding-box;
+  box-shadow: 0 1px 4px rgba(24, 28, 33, 0.012);
+  border: 2px solid #f7f7f7; /* Add border */
+  padding: 1rem; /* Add padding */
+  border-radius: 20px; /* Add border radius */
+  margin-bottom: 20px; /* Add margin */
+}
+
+/* ===== =====>>  Container Header/Navbar Css  <<===== =====  */
+.container header {
+  padding: 0 var(--p-2-5);
+}
+
+.container header .brandLogo {
+  display: flex;
+  align-items: center;
+}
+
+.container header .brandLogo figure img {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.container header .brandLogo span {
+  font-size: var(--xl-fs);
+  font-weight: 700;
+  margin-left: var(--m-0-5);
+}
+
+/* ===== =====>>  User Main-Profile Css Start  <<===== ===== */
+.container .userProfile {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  background: none;
+  box-shadow: none;
+}
+
+.container .userProfile .profile figure img {
+  width: 18rem;
+  height: 18rem;
+  border-radius: 50%;
+}
+
+/* ===== =====>>  Work & Skills Css Start  <<===== ===== */
+
+.container .work_skills {
+  padding: var(--p-1-5);
+}
+
+.work_skills .work .heading,
+.work_skills .skills .heading {
+  position: relative;
+  font-size: var(--xs-fs);
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 700;
+  margin-bottom: var(--m-1-5);
+}
+
+.work_skills .work .heading::after,
+.work_skills .skills .heading::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 40px;
+  height: 2px;
+  background: #2196f3;
+}
+
+/* ===== =====>>  Timeline & About Css Start  <<===== ===== */
+
+.container .timeline_about {
+  padding: var(--p-1-5);
+}
+
+.timeline_about .timeline .heading,
+.timeline_about .about .heading {
+  position: relative;
+  font-size: var(--xs-fs);
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 700;
+  margin-bottom: var(--m-1-5);
+}
+
+.timeline_about .timeline .heading::after,
+.timeline_about .about .heading::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 40px;
+  height: 2px;
+  background: #2196f3;
+}
+
+/* ===== =====>>  User-Details Css Start  <<===== ===== */
+
+.container .userDetails {
+  padding: var(--p-1-5);
+}
+
+.userDetails .heading {
+  position: relative;
+  font-size: var(--xs-fs);
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 700;
+  margin-bottom: var(--m-1-5);
+}
+
+.userDetails .heading::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 40px;
+  height: 2px;
+  background: #2196f3;
+}
+
+/* ===== =====>>  Account Settings Links Css  <<===== =====  */
+.account-settings-links .list-group-item {
+  padding: 0.85rem 1.5rem;
+  border-color: rgba(24, 28, 33, 0.03) !important;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  transition: width 0.5s ease; /* Adding transition for width */
+}
+
+.account-settings-links .list-group-item:hover {
+  width: 105%; /* Increase width on hover */
+  background-color: #2196f3;
+  color: white;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.account-settings-links .list-group-item.active {
+  font-weight: bold !important;
+}
+
+/* ===== =====>>  Account Settings Fileinput Css  <<===== =====  */
+.account-settings-fileinput {
+  position: absolute;
+  visibility: hidden;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+/* ===== =====>>  General Classes Css  <<===== =====  */
+/* Add general styles for buttons */
+.btn {
+  cursor: pointer;
+  border-radius: 20px; /* Apply border radius */
+  font-family: "Poppins", sans-serif; /* Apply font family */
+}
+
+/* Modify primary button */
+.btn-primary {
+  border-color: #000000; 
+  background: black; 
+  color: white;
+}
+
+/* Modify default button */
+.btn-default {
+  border-color: rgba(24, 28, 33, 0.1);
+  background: rgba(0, 0, 0, 0);
+  color: #4E5155;
+}
+
+/* ===== =====>>  Button Classes Css  <<===== =====  */
+.btn-facebook {
+  border-color: rgba(0, 0, 0, 0);
+  background: #3B5998;
+  color: #fff;
+}
+
+.btn-instagram {
+  border-color: rgba(0, 0, 0, 0);
+  background: #000;
+  color: #fff;
+}
+
+/* ===== =====>>  Text Classes Css  <<===== =====  */
+.text-light {
+  color: #babbbc !important;
+}
+
+/* ===== =====>>  Styles for Different Themes Css  <<===== =====  */
+/* Dark style */
+.dark-style .account-settings-links .list-group-item {
+  padding: 0.85rem 1.5rem;
+  border-color: rgba(255, 255, 255, 0.03) !important;
+}
+
+.dark-style .account-settings-links .list-group-item.active {
+  color: #fff !important;
+}
+
+/* Light style */
+.light-style .account-settings-links .list-group-item {
+  padding: 0.85rem 1.5rem;
+  border-color: rgba(24, 28, 33, 0.03) !important;
+}
+
+.light-style .account-settings-links .list-group-item.active {
+  color: #4E5155 !important;
+}
+
+/* Material style */
+.material-style .account-settings-links .list-group-item {
+  padding: 0.85rem 1.5rem;
+  border-color: rgba(24, 28, 33, 0.03) !important;
+}
+
+.material-style .account-settings-links .list-group-item.active {
+  color: #4E5155 !important;
+}
+
+/* ===== =====>>  Additional Custom Styles Css  <<===== =====  */
+.ui-w-80 {
+  width: 80px !important;
+}
+
+.account-settings-multiselect~.select2-container {
+  width: 100% !important;
+}
+
+.work-entry {
+  display: inline-block;
+  width: 45%;
+  margin-right: 10px;
+}
+
+.skills-entry {
+  display: inline-block;
+  width: 45%;
+  margin-right: 10px;
+}
+
+.border1 {
+  border: 2px solid #f7f7f7;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+.border2,
+.border3 {
+  border: 2px solid #f7f7f7;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.gentitle {
+  margin-bottom: 45px;
+  text-align: center;
+}
+
+/* ===== =====>>  Save Changes & Cancel Button  <<===== =====  */
+
+.account-settings-title {
+  font-size: rem; /* Adjust the font size as needed */
+  padding-left: 10px;
+}
+
+
+

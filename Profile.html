@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+
+    <!-- ===== ===== Custom Css ===== ===== -->
+    <link rel="stylesheet" href="Profile.css">
+    <link rel="stylesheet" href="ProResponsive.css">
+
+    <!-- ===== ===== Remix Font Icons Cdn ===== ===== -->
+    <link rel="stylesheet" href="fonts/remixicon.css">
+</head>
+
+<body style="background-color:#eaeaea;">
+    <!-- ===== ===== Body Main-Background ===== ===== -->
+    <span class="main_bg"></span>
+
+
+    <!-- ===== ===== Main-Container ===== ===== -->
+    <div class="container">
+
+        <!-- ===== ===== Header/Navbar ===== ===== -->
+        <header>
+            <div class="brandLogo">
+                <figure><img src="web_logo.jpg" alt="logo" width="40px" height="40px"></figure>
+                <span>JobLink</span>
+            </div>
+            
+        </header>
+
+
+        <!-- ===== ===== User Main-Profile ===== ===== -->
+        <section class="userProfile card">
+            <div class="profile">
+                <figure><img src="profile.png" alt="profile" width="250px" height="250px"></figure>
+              </div>
+        
+        </section>
+        
+        
+
+
+        <!-- ===== ===== Work & Skills Section ===== ===== -->
+        <section class="work_skills card">
+
+          
+            <!-- ===== ===== Work Contaienr ===== ===== -->
+            <div class="work">
+                <h1 class="heading">work</h1>
+                <div class="primary">
+                    <h1>#Work1</h1>
+                    <span>Primary</span>
+                    <p>#Work details 1</p>
+                </div>
+
+                <div class="secondary">
+                    <h1>#Work2</h1>
+                    <span>Secondary</span>
+                    <p>#Work details 2</p>
+                </div>
+            </div>
+
+            <!-- ===== ===== Skills Contaienr ===== ===== -->
+            <div class="skills">
+                <h1 class="heading">Skills</h1>
+                <ul>
+                    <li style="--i:0">Skills1</li>
+                    <li style="--i:1">Skills2</li>
+                    <li style="--i:2">Skills3</li>
+                    <li style="--i:3">Skills4</li>
+                </ul>
+            </div>
+        </section>
+
+
+        <!-- ===== ===== User Details Sections ===== ===== -->
+        <section class="userDetails card">
+            <div class="userName">
+                <h1 class="name">User Name</h1>
+                <p>Course Graduated</p>
+              </div>
+
+              <div class="editProfileBtn">
+                <a href="ProSet.html" class="editProfile">Edit Profile<br><br></a>
+            </div>
+
+           
+
+            <div class="btns">
+                <ul>
+                    <li class="sendMsg active" id="resumeLink">
+                        <i class="ri-check-fill ri"></i>
+                        Resume
+                    </li>
+                </ul>
+            
+                <div class="container-resume" id="popupContainer" style="display: none;">
+                    <!-- Pop-up content goes here -->
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+                    </p>
+                    <button id="backButton">Back</button>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="timeline_about card">
+            <div class="tabs">
+                
+            </div>
+
+            <div class="contact_Info">
+                <h1 class="heading">Contact Information</h1>
+                <ul>
+                    <li class="phone">
+                        <h1 class="label">Phone:</h1>
+                        <span class="info">+11 234 567 890</span>
+                    </li>
+
+                    <li class="address">
+                        <h1 class="label">Address:</h1>
+                        <span class="info">Street,No. <br> Province,City,Country</span>
+                    </li>
+
+                    <li class="email">
+                        <h1 class="label">E-mail:</h1>
+                        <span class="info">user@email.com</span>
+                    </li>
+
+        
+                </ul>
+            </div>
+
+            <div class="basic_info">
+                <h1 class="heading">Basic Information</h1>
+                <ul>
+                    <li class="birthday">
+                        <h1 class="label">Birthday:</h1>
+                        <span class="info">Dec 25, 2000</span>
+                    </li>
+
+                    <li class="sex">
+                        <h1 class="label">Gender:</h1>
+                        <span class="info">Male</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+   
+
+    <script src="Profile.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</body>
+
+</html>

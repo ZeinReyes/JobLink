@@ -5,19 +5,71 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
         <link rel="stylesheet" href="Post2.css">
+        <link rel="stylesheet" href="index.css">
 
-        <title>Card glassmorphism</title>
+        <title>Post page</title>
     </head>
-    <body>
 
-        <section class="post-cloud">
-            <div class="post-con">
+    <body>
+        
+        <header class="header">
+            <nav class="navbar">
+                <a href="index.html" class="nav-logo">JobLink</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Post2.html" class="nav-link">Post A Job</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Profile.html" class="nav-link">Profile</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </header>
+<body> 
+
+    <h1 class="heading"><span class="job-action">Find your job on</span> <span class="highlight">JobLink</span></h1>
+
+        <section class="post__cloud">
+            <div class="post__con" id="post1">
                 <a href="#" class="post__button" onclick="expandPost('post1', event)">Post Something</a>
 
-            </div>
+                    <div class="post__con2">
+                        <h2 class="post__title">Title</h2>
+                        <input type="text" class="title__input">
+                    </div>
+                    <div class="grid-container" id="gridContainer">
+                        <div class="post__con3">
+                            <h2 class="post__photo">Upload Photo</h2>
+                            <label class="btn btn-outline-primary">
+                                Click Here
+                                <input type="file" class="photo__button">
+                            </label> &nbsp;
+                            <div class="photo__sample">
 
-
+                            </div>
+                        </div>
+                        <div class="post__con3">
+                            <h2 class="post__details">Details</h2>
+                          <textarea class="details__input"
+                          rows="5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nunc arcu, dignissim sit amet sollicitudin iaculis, vehicula id urna. Sed luctus urna nunc. Donec fermentum, magna sit amet rutrum pretium, turpis dolor molestie diam, ut lacinia diam risus eleifend sapien. Curabitur ac nibh nulla. Maecenas nec augue placerat, viverra tellus non, pulvinar risus.</textarea>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="post__button2" onclick="showPostButton()">Post</a> <!-- Move this below the grid -->
         </section>
+        
+        <h1 class="Find-job-header"> Find Your Job! </h1>
 
         <section class="card" >
                 <div class="card__glass" id="card1">
@@ -110,7 +162,7 @@
 
         </section>
 
-        
+        </body>
         <script src="Post2.js"></script>
     </body>
 </html>
